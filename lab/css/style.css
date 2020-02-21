@@ -10,22 +10,37 @@ body {
     font-family: helvetica, arial, sans-serif;
 }
 
-.map {
-    background-color: #eee;
+.header{
+    background-color: #fca0ef;
     position: absolute;
-    left: 400px;
+    left: 0;
     right: 0;
-    bottom: 0;
     top: 0;
+    height:8%;
+    z-index: 1; 
+    /*use z-index to specify the layer priority*/
+
+}
+
+.map {
+    background-color:#6e8666;
+    position: absolute;
+    left: 0;
+    right: 20%;
+    bottom: 0;
+    top: 8%;
 }
 
 .sidebar {
     overflow-y: auto; /* This line allows the sidebar to scroll when there is
                          a lot of content in it */
-    background-color: #ccc;
+    background-color: #90b8d9;
     position: absolute;
-    left: 0;
-    width: 400px;
+    right: 0; /*tell it to be to the side*/
+    width: 20%; /* fixing widt of sidebar*/
     bottom: 0;
-    top: 0;
+    top: 8%;
 }
+
+/*can use percentages to be more flexible
+*/
